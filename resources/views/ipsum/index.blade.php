@@ -23,9 +23,20 @@ such as a page specific stylesheets.
 
             <input type='hidden' name='_token' value='{{ csrf_token() }}'>
 
-            Paragraphs: <input type='text' name='num_paragraphs'><br>
+            Paragraphs: <input type='text' name='num_paragraphs' value={{old('num_paragraphs')}}><br>
+
+        @if(count($errors) > 0)
+            <ul>
+                @foreach ($errors->all() as $error)
+                    <li>{{ $error }}</li>
+                @endforeach
+            </ul>
+        @endif
 
             <input type='submit' value='Generate!'>
+
+        </form>
+
 @stop
 
 

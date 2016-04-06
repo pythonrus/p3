@@ -18,8 +18,14 @@ class IpsumController extends Controller
         return view('ipsum.index');
     }
 
-    public function postIndex()
+    public function postIndex(Request $request)
     {
+
+        $this->validate($request, [
+            'num_paragraphs' => 'required|numeric',
+        ]);
+
+        //dd($request ->all());
         return 'Process lorem ipsum';
     }
 }

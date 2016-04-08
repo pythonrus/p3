@@ -17,3 +17,9 @@ Route::get('/', function () {
 
 Route::get('/ipsum','IpsumController@getIndex');
 Route::post('/ipsum','IpsumController@postIndex');
+Route::get('logs', '\Rap2hpoutre\LaravelLogViewer\LogViewerController@index');
+
+# Restrict certain routes to only be viewable in the local environments
+if(App::environment('local')) {
+    Route::get('logs', '\Rap2hpoutre\LaravelLogViewer\LogViewerController@index');
+}

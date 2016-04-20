@@ -25,7 +25,15 @@ class IpsumController extends Controller
             'num_paragraphs' => 'required|numeric',
         ]);
 
+        $data = $request ->all();
+
+        $generator = new \Badcow\LoremIpsum\Generator();
+        $paragraphs = $generator->getParagraphs($data['num_paragraphs']);
+        echo implode('<p>', $paragraphs);
+        //return view('lorem.postIndex')->with(['paragraphs' => $paragraphs]);
+
+
         //dd($request ->all());
-        return 'Process lorem ipsum';
+        //return 'Process lorem ipsum';
     }
 }

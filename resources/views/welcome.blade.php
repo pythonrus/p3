@@ -1,45 +1,65 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <title>Laravel</title>
+<head>
 
-        <link href="https://fonts.googleapis.com/css?family=Lato:100" rel="stylesheet" type="text/css">
+	<meta charset='utf-8'>
 
-        <style>
-            html, body {
-                height: 100%;
-            }
+	<title>	Lorem Ipsum Generator
+</title>
 
-            body {
-                margin: 0;
-                padding: 0;
-                width: 100%;
-                display: table;
-                font-weight: 100;
-                font-family: 'Lato';
-            }
+	<meta name='viewport' content='width=device-width, initial-scale=1'>
 
-            .container {
-                text-align: center;
-                display: table-cell;
-                vertical-align: middle;
-            }
+	<link href="//netdna.bootstrapcdn.com/bootswatch/3.1.1/flatly/bootstrap.min.css" rel="stylesheet">
 
-            .content {
-                text-align: center;
-                display: inline-block;
-            }
+	<style>
+		a:link {
+			text-decoration:underline;
+		}
+	</style>
 
-            .title {
-                font-size: 96px;
-            }
-        </style>
-    </head>
-    <body>
-        <div class="container">
-            <div class="content">
-                <div class="title">Laravel 5</div>
-            </div>
-        </div>
-    </body>
+
+
+	<style>
+
+
+	</style>
+
+
+</head>
+<body>
+
+
+
+<div class='container'>
+
+
+<h1>Developer's Best Friend</h1>
+
+
+<h2>Lorem Ipsum Generator</h2>
+<blockquote>
+	In publishing and graphic design, lorem ipsum is a placeholder text commonly used to demonstrate the graphic elements of a document or visual presentation.
+	By replacing the distraction of meaningful content with filler text of scrambled Latin it allows viewers to focus on graphical elements such as font, typography, and layout.
+</blockquote>
+
+<p>Create random filler text for your applications.</p>
+
+<a href='/ipsum'>Generate some text...</a>
+
+<br>
+
+<h2>Random User Generator</h2>
+<p>Create random user data for your applications. Like Lorem Ipsum, but for people.</p>
+
+<a href='/usergen'>Generate some users...</a>
+
+
+
+</div>
+
+<script src='//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.1/jquery.min.js'></script>
+<script src='//netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js'></script>
+
+
+</body>
 </html>

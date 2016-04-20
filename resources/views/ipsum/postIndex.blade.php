@@ -37,6 +37,16 @@ such as a page specific stylesheets.
 
         </form>
 
+        <section>
+            <div class="output">
+                <h2>Your Paragraphs:</h2>
+                @foreach ($paragraphs as $paragraph)
+                    <p>{{ $paragraph }}</p>
+                @endforeach
+            </div>
+        </section>
+
+
 @stop
 
 

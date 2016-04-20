@@ -22,16 +22,16 @@ class IpsumController extends Controller
     {
 
         $this->validate($request, [
-            'num_paragraphs' => 'required|numeric',
+            'num_paragraphs' => 'required|integer|min:1|max:99',
         ]);
 
         $data = $request ->all();
 
         $generator = new \Badcow\LoremIpsum\Generator();
         $paragraphs = $generator->getParagraphs($data['num_paragraphs']);
-        echo implode('<p>', $paragraphs);
-        //return view('lorem.postIndex')->with(['paragraphs' => $paragraphs]);
 
+        return view('ipsum.postIndex')->with(['paragraphs' => $paragraphs]);
+        // echo implode('<p>', $paragraphs);
 
         //dd($request ->all());
         //return 'Process lorem ipsum';

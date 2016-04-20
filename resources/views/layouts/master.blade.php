@@ -16,6 +16,7 @@
 <body>
 
     <header>
+        <a href='/'>&larr; Home</a><br>
         <img
         src='http://embed.wistia.com/deliveries/48cc4e5d1d84536690ff97bc174dc9aaa6fd2c45.jpg?image_crop_resized=640x360'
         style='width:300px'

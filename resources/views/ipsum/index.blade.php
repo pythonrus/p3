@@ -17,6 +17,7 @@ such as a page specific stylesheets.
 
 
 @section('content')
+
         <h1>Lorem Ipsum Generator</h1>
 
         <form method='POST' action='/ipsum'>
@@ -35,7 +36,8 @@ such as a page specific stylesheets.
 
             <input type='submit' value='Generate!'>
 
-        </form>
+        </form><br>
+
 
 @stop
 

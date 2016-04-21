@@ -23,7 +23,7 @@ such as a page specific stylesheets.
 
             <input type='hidden' name='_token' value='{{ csrf_token() }}'>
 
-            Enter Number of Paragraphs (1-99):  <input type='text' name='num_paragraphs' value={{old('num_paragraphs')}}><br><br>
+            Enter Number of Paragraphs (1-99):  <input type='text' name='number_of_paragraphs' value={{old('number_of_paragraphs')}}><br><br>
 
         @if(count($errors) > 0)
             <ul>

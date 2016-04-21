@@ -24,7 +24,29 @@ such as a page specific stylesheets.
 
             <input type='hidden' name='_token' value='{{ csrf_token() }}'>
 
-            Enter Number of Users (1-99):  <input type='text' name='number_of_users' value={{old('number_of_users')}}><br><br>
+            Enter Number of Users (1-99):  <input type='text' name='number_of_users' value={{old('number_of_users')}}><br>
+
+            <input id="birthdate" type="checkbox" name="birthdate"
+                    <?php
+                    if (isset($_POST["birthdate"]))
+                            echo "true";
+                    ?>>
+            <label for="birthdate">Check if you birthdate for each user</label><br>
+
+            <input id="email" type="checkbox" name="email"
+                <?php
+                  if (isset($_POST["email"]))
+                      echo "true";
+                ?>>
+            <label for="email">Check if you want email for each user</label><br>
+
+
+            <input id="profile" type="checkbox" name="profile"
+                    <?php
+                    if (isset($_POST["profile"]))
+                            echo "true";
+                    ?>>
+            <label for="profile">Check if you want a lorem ipsum style profile description</label><br>
 
         @if(count($errors) > 0)
             <ul>
@@ -34,11 +56,10 @@ such as a page specific stylesheets.
             </ul>
         @endif
 
-            <input type='submit' value='Generate!'>
+            <br><input type='submit' value='Generate!'>
 
         </form><br>
-
-
+        
 @stop
 
 

@@ -24,21 +24,21 @@ such as a page specific stylesheets.
 
             <input type='hidden' name='_token' value='{{ csrf_token() }}'>
 
-            Enter Number of Users (1-99):  <input type='text' name='number_of_users' value={{old('number_of_users')}}><br>
+            Enter Number of Users (1-99):  <input type='text' name='number_of_users' value={{old('number_of_users')}}><br><br>
 
             <input id="birthdate" type="checkbox" name="birthdate"
                     <?php
                     if (isset($_POST["birthdate"]))
                             echo "true";
                     ?>>
-            <label for="birthdate">Check if you birthdate for each user</label><br>
+            <label for="birthdate">Birthdate?</label><br>
 
             <input id="email" type="checkbox" name="email"
                 <?php
                   if (isset($_POST["email"]))
                       echo "true";
                 ?>>
-            <label for="email">Check if you want email for each user</label><br>
+            <label for="email">Email?</label><br>
 
 
             <input id="profile" type="checkbox" name="profile"
@@ -46,7 +46,7 @@ such as a page specific stylesheets.
                     if (isset($_POST["profile"]))
                             echo "true";
                     ?>>
-            <label for="profile">Check if you want a lorem ipsum style profile description</label><br>
+            <label for="profile">Profile?</label><br>
 
 
         @if(count($errors) > 0)
@@ -74,7 +74,7 @@ such as a page specific stylesheets.
                 <p>Email: {{ $user['email'] }}</p>
               @endif
               @if( isset($user['profile']) )
-                <p>Profile: {{ $user['profile'] }}</p>
+                <p>Profile: {{ $user['profile'] }}</p><br>
               @endif
               @endforeach
           </div>

@@ -1,0 +1,55 @@
+h1,h2,p,header,body { 
+  text-align: center;
+}
+
+a {
+	text-align: center;
+}
+
+body {
+	padding:20px;
+}
+
+.logo {
+	width:25%;
+	margin-bottom:20px;
+	display:block;
+
+}
+
+nav ul {
+	list-style-type:none;
+	padding:5px 0px 5px 0px;
+}
+
+nav ul li {
+	display:inline;
+	margin-right:10px;
+}
+
+a:link, a:visited, a:active, a:hover {
+	text-decoration:underline;
+}
+
+.tags {
+	color:grey;
+	font-family:consolas;
+}
+
+section#description {
+  display: block;
+  margin: 1em;
+  padding: 1em;
+  border-style: solid;
+  float: left;
+  width: 66%;
+}
+
+
+p.name { 
+	font-weight:bold;
+}
+
+p.blurb {
+	font-style:italic;
+}

@@ -2,7 +2,7 @@
 
 
 @section('title')
-    Generate lorem ipsum
+    Generate random user
 @stop
 
 
@@ -18,13 +18,13 @@ such as a page specific stylesheets.
 
 @section('content')
 
-        <h1>Lorem Ipsum Generator</h1>
+        <h1>Random User Generator</h1>
 
-        <form method='POST' action='/ipsum'>
+        <form method='POST' action='/usergen'>
 
             <input type='hidden' name='_token' value='{{ csrf_token() }}'>
 
-            Enter Number of Paragraphs (1-99):  <input type='text' name='number_of_paragraphs' value={{old('number_of_paragraphs')}}><br><br>
+            Enter Number of Users (1-99):  <input type='text' name='number_of_users' value={{old('number_of_users')}}><br><br>
 
         @if(count($errors) > 0)
             <ul>

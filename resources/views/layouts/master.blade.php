@@ -2,7 +2,7 @@
 <html>
 <head>
     <title>
-        {{-- Yield the title if it exists, otherwise default to 'Foobooks' --}}
+        {{-- Yield the title if it exists, otherwise default to 'P3' --}}
         @yield('title','P3')
     </title>
 

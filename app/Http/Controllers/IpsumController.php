@@ -8,10 +8,6 @@ use P3\Http\Requests;
 
 class IpsumController extends Controller
 {
-    //
-
-
-
     public function getIndex()
     {
         //return 'Show lorem ipsum';
@@ -22,13 +18,13 @@ class IpsumController extends Controller
     {
 
         $this->validate($request, [
-            'num_paragraphs' => 'required|integer|min:1|max:99',
+            'number_of_paragraphs' => 'required|integer|min:1|max:99',
         ]);
 
         $data = $request ->all();
 
         $generator = new \Badcow\LoremIpsum\Generator();
-        $paragraphs = $generator->getParagraphs($data['num_paragraphs']);
+        $paragraphs = $generator->getParagraphs($data['number_of_paragraphs']);
 
         return view('ipsum.postIndex')->with(['paragraphs' => $paragraphs]);
         // echo implode('<p>', $paragraphs);

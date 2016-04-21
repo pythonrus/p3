@@ -28,8 +28,6 @@ class IpsumController extends Controller
 
         return view('ipsum.postIndex')->with(['paragraphs' => $paragraphs]);
         // echo implode('<p>', $paragraphs);
-
         //dd($request ->all());
-        //return 'Process lorem ipsum';
     }
 }
